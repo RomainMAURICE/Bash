@@ -41,6 +41,10 @@ done
 while true; do
 done
 
+---------
+exit       #pour arreter le programme
+
+break      #pour sortir de la boucle
 ----------
 
 On utilise le symbole $ pour accéder à la valeur d’une variable.
@@ -50,7 +54,10 @@ echo "Bonjour, $nom"
 
 ((x++)) #pour incrémenter
 
+----------
 
+echo "saisissez une valeure"
+read arg                                #saisir une entrée utilisateur
 
 -----Boucle for avec une plage de nombres (range)
 
