@@ -1,0 +1,137 @@
+#!/bin/bash
+
+variables non typé
+
+a = "bonjour"
+b = 2
+
+----------
+
+if(( b < 3)); then			
+fi
+
+(( )) pour les opérations arithmétiques
+pas de "$" pour les variables
+
+----------
+
+if[ "$a" = "bonjour" ]; then		
+fi
+
+[ ] test généraux, plus stricte, pas de = > < pour les nombres, 
+
+"$" pour les variables
+-lt : moins que (<)
+-le : moins ou égal (<=)
+-gt : plus grand que (>)
+-ge : plus grand ou égal (>=)
+-eq : égal (==)
+-ne : différent (!=)
+
+c = 4
+d = 6
+if ["$c" -eq "$d$]; then
+fi
+
+----------
+
+while []; do	
+done
+
+while true; do
+done
+
+----------
+
+On utilise le symbole $ pour accéder à la valeur d’une variable.
+echo "Bonjour, $nom"
+
+----------
+
+((x++)) #pour incrémenter
+
+
+
+-----Boucle for avec une plage de nombres (range)
+
+for i in {1..5}
+do
+    echo "Le nombre est $i"
+done
+
+->
+
+Le nombre est 1
+Le nombre est 2
+Le nombre est 3
+Le nombre est 4
+Le nombre est 5
+
+
+-----Boucle for avec des pas (steps)
+
+for i in {1..10..2}
+do
+    echo "Le nombre est $i"
+done
+
+->
+
+Le nombre est 1
+Le nombre est 3
+Le nombre est 5
+Le nombre est 7
+Le nombre est 9
+
+
+-----Boucle for avec une liste de valeurs
+
+for fruit in pomme banane cerise
+do
+    echo "J'aime les $fruit"
+done
+
+->
+
+J'aime les pomme
+J'aime les banane
+J'aime les cerise
+
+
+-----Boucle for avec une variable numérique
+
+for (( i=1; i<=5; i++ ))
+do
+    echo "Le nombre est $i"
+done
+
+->
+
+Le nombre est 1
+Le nombre est 2
+Le nombre est 3
+Le nombre est 4
+Le nombre est 5
+
+
+-----Boucle for avec un tableau
+
+fruits=("pomme" "banane" "cerise")
+
+for fruit in "${fruits[@]}"
+do
+    echo "J'aime les $fruit"
+done
+
+->
+
+J'aime les pomme
+J'aime les banane
+J'aime les cerise
+
+#Quand vous voulez itérer sur tous les éléments d'un tableau ou afficher tous ses éléments, vous utilisez ${tableau[@]}.
+
+ma_fonction() {
+    echo "Fonction appelée"
+}
+
