@@ -131,6 +131,8 @@ J'aime les cerise
 
 #Quand vous voulez itérer sur tous les éléments d'un tableau ou afficher tous ses éléments, vous utilisez ${tableau[@]}.
 
+----------
+
 ma_fonction() {
     echo "Fonction appelée"
 }
