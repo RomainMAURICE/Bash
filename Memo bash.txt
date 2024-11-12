@@ -4,7 +4,7 @@ variables non typé
 
 a="bonjour"
 b=2
-#↓pas d'espace entre le = !!
+#pas d'espace entre le = !!
 
 ----------
 
