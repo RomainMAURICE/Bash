@@ -2,8 +2,9 @@
 
 variables non typé
 
-a = "bonjour"
-b = 2
+a="bonjour"
+b=2
+#↓pas d'espace entre le = !!
 
 ----------
 
