@@ -19,7 +19,7 @@ pas de "$" pour les variables
 if[ "$a" = "bonjour" ]; then		
 fi
 
-[ ] test généraux, plus stricte, pas de = > < pour les nombres, 
+[ ] test généraux, pour comparer des chaines de caractère, plus stricte, pas de = > < pour les nombres, 
 
 "$" pour les variables
 -lt : moins que (<)
